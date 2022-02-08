@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe</title>
+    <style>
+        div{
+            color: hotpink;
+        }
+        div.d01{
+            display: inline-block;
+            color: black;
+            background-color: dimgray;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+        }
+        /* Uso do hover (ao passar o mouse sob provoca um evento)*/
+        div:hover{
+            background-color: goldenrod;
+        }
+        div#escondido > p{
+            display: none;
+            width: 250px;
+        }
+        div#escondido:hover >p{
+            width: 250px;
+            color: black;
+            display: block;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d01">01</div>
+    <div class="d01">02</div>
+    <div class="d01">03</div>
+    <div id="escondido">Passe o mouse aqui!
+        <p>TEXTO ESCONDIDO!</p>
+    </div>
+    
+</body>
+</html>
